@@ -10,16 +10,26 @@
 <body>
     <div class="container">
         <div class="container__content">
-            <select name="City" id="city-name">
-                <option value="Moscow">Moscow</option>
-                <option value="Side">Side</option>
-                <option value="Penza">Penza</option>
-            </select>
-            <div class="container__city-name">Moscov</div>
+            <div class="container__search">
+                <div>
+                    <select class="container__city-choice" name="city" id="city-name">
+                        <option value="Moscow">Moscow</option>
+                        <option value="Side">Side</option>
+                        <option value="Penza">Penza</option>
+                    </select>
+
+                    <input class="container__city-search" type="text" value="">
+                </div>
+
+                <div>
+                    <img class="container__img-search" src="icons8-поиск-26.png" alt="">
+                </div>
+            </div>
+            <div class="container__city-name"></div>
 
             <div class="container__weather">
-                <div class="container__degrees">10&deg;</div>
-                <div class="container__condition-weather">Clouds</div>
+                <div class="container__degrees"></div>
+                <div class="container__condition-weather"></div>
             </div>
 
             <div class="img">
@@ -30,6 +40,7 @@
         </div>
     </div>
 
+    <script src="city.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
